@@ -26,7 +26,7 @@ resource "aws_key_pair" "sre_key" {
 
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+  instance_type = "t3.small"
   key_name = aws_key_pair.sre_key.key_name
 
   tags = {
