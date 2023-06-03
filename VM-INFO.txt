@@ -1,0 +1,22 @@
+###############################################################################
+Your EC2 instance can be accessed via ssh using the following:
+
+Username: ubuntu
+ssh_key: sre_pod23_key.pem
+Public IP: 44.198.188.221
+Public DNS Name: ec2-44-198-188-221.compute-1.amazonaws.com
+
+To access your instance, please run either of the following commands on your jumphost:
+
+ssh -i sre_pod23_key.pem ubuntu@ec2-44-198-188-221.compute-1.amazonaws.com
+
+or
+
+ssh -i sre_pod23_key.pem ubuntu@44.198.188.221
+
+Please note that if your instance reboots, the public IP address may change. Please re-run terraform via "terraform apply" to recreate
+this file with updated information.
+################################################################################
+
+
+
